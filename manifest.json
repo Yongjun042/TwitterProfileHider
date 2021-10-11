@@ -13,10 +13,12 @@
     "permissions": [
         "activeTab"
     ],
+    "background": {
+        "scripts": ["hide.js"]
+    },
 
     "content_scripts": [{
-        "matches": ["*://*.twitter.com/*"],
-        "js": ["hide.js"]
+        "matches": ["*://*.twitter.com/*"]
     }]
 
 }
